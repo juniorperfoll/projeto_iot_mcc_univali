@@ -1,9 +1,4 @@
-set(COMPONENT_SRCDIRS
-  "dht"
-)
-
-set(COMPONENT_ADD_INCLUDEDIRS
-  "."
-)
-
-register_component()
+cmake_minimum_required(VERSION 3.5)
+set(EXTRA_COMPONENT_DIRS $ENV{HOME}/junio/esp/RTOS_SDK/examples/projeto/esp-idf-lib/components)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(projeto_iot_mcc_univali)
